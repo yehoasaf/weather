@@ -1,0 +1,27 @@
+.favorites-page-container{
+    margin-top: rem(35px);
+
+    .favorites-title{
+        padding-top: 60px;
+
+        @include for-wide-layout{
+            padding-top: 0;
+        }
+    }
+
+    .favorites-container{
+        margin-top: rem(15px);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        .fav-city-container{
+            display: flex;
+            margin: rem(15px);
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+}

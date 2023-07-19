@@ -1,0 +1,91 @@
+.weather-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: rem(35px);
+
+    .weather-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .fav-toggle {
+            display: inline-block;
+            padding: 0.7em 1.7em;
+            margin: 0 0.3em 0.3em 0;
+            margin-bottom: rem(20px);
+            border-radius: 0.2em;
+            box-sizing: border-box;
+            text-decoration: none;
+            color: #3f3f3f;
+            background-color: #ffffff;
+            box-shadow: inset 0 -0.6em 1em -0.35em rgba(0, 0, 0, 0.17),
+                inset 0 0.6em 2em -0.3em rgba(255, 255, 255, 0.15), inset 0 0 0em 0.05em rgba(255, 255, 255, 0.12);
+            text-align: center;
+            position: relative;
+        }
+        @media all and (max-width: 30em) {
+            .fav-toggle {
+                display: block;
+                margin: 0.4em auto;
+            }
+        }
+
+        .curr-weather-img {
+            height: rem(65px);
+        }
+
+        .city-name {
+            margin-top: rem(10px);
+        }
+
+        .weather-txt {
+            margin-top: rem(-20px);
+        }
+
+        .forcast-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: rem(20px);
+
+            @include for-tablet-layout {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            @include for-wide-layout {
+                flex-wrap: nowrap;
+            }
+
+
+            .daily-forcast {
+                margin-bottom: rem(20px);
+
+                @include for-tablet-layout {
+                    margin: rem(5px);
+                }
+
+                @include for-desktop-layout {
+                    width: rem(160px);
+
+                    &:not(:last-child) {
+                        margin-right: rem(20px);
+                    }
+
+                    &:first-child {
+                        margin-left: rem(20px);
+                    }
+
+                    &:last-child {
+                        margin-right: rem(20px);
+                    }
+                }
+
+                @include for-wide-layout {
+                    width: unset;
+                }
+            }
+        }
+    }
+}
