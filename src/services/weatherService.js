@@ -5,7 +5,7 @@ export const weatherService = {
     getCityLocation
 }
 
-const apiKey = '6Vm8epxv7AL3KJpX6is9Xm5LtAIOmc5p'
+const apiKey = 'VQSUND6R4Se72BRXRkSP7NMDxAcUSnAv'
 // const cityKey = "215854"
 
 
