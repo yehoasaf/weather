@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/yehoasaf/weather.git/static/css/main.b86f907b.css",
+    "main.js": "/yehoasaf/weather.git/static/js/main.9754878a.js",
+    "static/media/loading.gif": "/yehoasaf/weather.git/static/media/loading.6ad2cf1aa93796e23120.gif",
+    "index.html": "/yehoasaf/weather.git/index.html",
+    "main.b86f907b.css.map": "/yehoasaf/weather.git/static/css/main.b86f907b.css.map",
+    "main.9754878a.js.map": "/yehoasaf/weather.git/static/js/main.9754878a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b86f907b.css",
+    "static/js/main.9754878a.js"
+  ]
+}
